@@ -1,0 +1,31 @@
+import java.applet.AudioClip;
+
+import javax.swing.JApplet;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class FartMachine {
+	public static void main(String[] args) {
+		FartMachine x = new FartMachine();
+		x.setup();
+	}
+	
+	JFrame frame = new JFrame();
+	JPanel panel = new JPanel();
+	JButton button1 = new JButton();
+	JButton button2 = new JButton();
+	JButton button3 = new JButton();
+	JButton button4 = new JButton();
+	
+	public void setup(){
+		button1.setText("");
+		button1
+	}
+	
+	private void playSound(String fileName) {
+		AudioClip sound = JApplet.newAudioClip(getClass().getResource(fileName));
+		sound.play();
+	}
+}
